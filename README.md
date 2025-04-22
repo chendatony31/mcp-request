@@ -19,6 +19,7 @@ After added, you can query weather information of different cities
 
 - Or directly send the JSON definition
 
+```
 `Register this request: {
     "id": "sui_rpc",
     "name": "Sui RPC",
@@ -50,8 +51,9 @@ After added, you can query weather information of different cities
       }
     }
   }`
+```
 
-Query the balance of 0x317b2a1385c9f7115f4c227b512293e6a632762c7c4e79728b3ad743f656b8fe
+Query the balance of 0x317b2a1385c9f7115f4c227b512293e6a632762c7c4e79728b3ad743f656b8fe // ai knows which methods and params they need to use.
 
 ## deleteApi
 

@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chendatony31/mcp-request.git"
+  },
   "bin": {
     "mcp-request": "./dist/index.js"
   },

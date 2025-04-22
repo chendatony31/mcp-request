@@ -1,6 +1,35 @@
 # mcp-request
 
-A general-purpose HTTP request MCP server
+A Model Context Protocol (MCP) server for making HTTP requests to different services.
+
+## Why mcp-request?
+
+When working with multiple APIs in an MCP environment, creating individual MCP servers for each API can be:
+
+- Time-consuming
+- Resource-intensive
+- Unnecessary in many cases
+
+This tool allows you to:
+
+- Quickly expose any HTTP API through MCP
+- Reuse existing HTTP APIs without additional server setup
+- Maintain a single MCP server for multiple APIs
+
+## Installation
+
+```json
+{
+  "mcpServers": {
+    "wallet-mcp": {
+      "command": "npx",
+      "args": ["mcp-request"]
+    }
+  }
+}
+```
+
+## Usage
 
 ## Tools
 
@@ -9,9 +38,9 @@ A general-purpose HTTP request MCP server
 - beforeRequest
 - request
 
-### registerApi: Add custom HTTP requests
+### registerApi: register custom HTTP requests
 
-- For example, adding a weather query API (GET):
+- For example, adding a weather query API:
 
 `Add a weather query interface to mcp-request https://wttr.in/Tokyo?format=j1 where Tokyo is the city's name`
 
@@ -53,7 +82,7 @@ After added, you can query weather information of different cities
   }`
 ```
 
-Query the balance of 0x317b2a1385c9f7115f4c227b512293e6a632762c7c4e79728b3ad743f656b8fe // ai knows which methods and params they need to use.
+`Query the balance of 0x317b2a1385c9f7115f4c227b512293e6a632762c7c4e79728b3ad743f656b8fe` // ai knows which methods and params they need to use.
 
 ## deleteApi
 
